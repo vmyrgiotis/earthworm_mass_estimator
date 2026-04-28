@@ -140,7 +140,7 @@ def detect_a4_contour(image, debug=False):
     return np.asarray(best["rect"], dtype=np.float32).reshape(4, 2), debug_map
 
 
-def detect_objects_on_rectified_paper(rectified_img, dark_threshold=200, min_object_pixels=100, method="adaptive"):
+def detect_objects_on_rectified_paper(rectified_img, dark_threshold=200, min_object_pixels=500, method="adaptive"):
     gray = cv2.cvtColor(rectified_img, cv2.COLOR_BGR2GRAY)
 
     blur_size = 201
