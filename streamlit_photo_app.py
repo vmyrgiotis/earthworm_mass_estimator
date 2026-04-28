@@ -286,9 +286,9 @@ st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsa
 st.write(
     " Take a picture of earthworms on an A4 sheet. "
     " Ensure the entire A4 sheet is visible in the image for accurate measurements. "
-    " Try to centre the photo on centre the A4 sheet." 
+    " Try to centre the photo close to the centre of the A4 sheet." 
     " Use good lighting for best results."
-    " Turn the camera flash on if needed to void strong shadows and reflections on the paper. "
+    " Turn the camera flash on to void strong shadows and reflections on the paper - if needed. "
     " The app detects the A4 outline and object mask, and estimates area cover by earthworms in cm². "    
     " Adjust detection parameters in the sidebar if needed."
     " The Minimum object size (pixels) parameter can be used to exclude small debris or other noise."
