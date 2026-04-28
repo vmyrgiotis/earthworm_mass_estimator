@@ -286,7 +286,7 @@ st.image(
     "wormomatic_logo.png",
     # caption="Earthworm Area/Mass Estimator",
     width=800,
-    width=200,
+    height=200,
 )
 
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
