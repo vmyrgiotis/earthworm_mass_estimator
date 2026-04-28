@@ -299,7 +299,11 @@ with st.sidebar:
     method = st.selectbox("Thresholding method", ["adaptive", "global", "otsu"])
 
     st.markdown("---")
-    st.image("ukceh.png", caption="UK Centre for Ecology & Hydrology", use_column_width=True)
+    st.image(
+        "ukceh.png",
+        caption="[UK Centre for Ecology & Hydrology](https://www.ceh.ac.uk)",
+        use_column_width=True,
+    )
 
 st.subheader("Capture or upload image")
 tab1, tab2 = st.tabs(["Use camera", "Upload image"])
