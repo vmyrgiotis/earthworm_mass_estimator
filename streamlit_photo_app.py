@@ -284,7 +284,10 @@ st.set_page_config(page_title="Earthworm area/mass Estimator", layout="wide")
 st.title("Earthworm Area/Mass Estimator")
 st.write(
     "Take a picture of earthworms on an A4 sheet. The app detects the paper, "
-    "shows the A4 outline and object mask, and estimates covered area in cm²."
+    "shows the A4 outline and object mask, and estimates covered area in cm². "
+    "Ensure the entire A4 sheet is visible in the image for accurate measurements. "
+    "Try to centre the photo on the A4 sheet and use good lighting for best results. "
+    "Adjust detection parameters in the sidebar if needed."
 )
 
 
@@ -353,9 +356,9 @@ if image_bgr is not None:
 
             st.markdown("### Measurements")
             m1, m2, m3 = st.columns(3)
-            m1.metric("Number of detected objects", int(result["object_count"]))
-            m2.metric("Covered area (cm²)", f"{result['covered_area_cm2']:.2f}")
-            m3.metric("Covered pixels", int(result["covered_pixels"]))
+            m1.metric("Number of detected objects/earthworms", int(result["object_count"]))
+            m2.metric("Area covered by earthworms (cm²)", f"{result['covered_area_cm2']:.2f}")
+            m3.metric("Pixels covered by earthworms", int(result["covered_pixels"]))
 
             st.caption(
                 f"mm per pixel: x = {result['mm_per_pixel_x']:.4f}, "
