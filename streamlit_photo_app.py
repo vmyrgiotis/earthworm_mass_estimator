@@ -285,7 +285,7 @@ st.set_page_config(page_title="Earthworm area/mass Estimator", layout="wide")
 st.image(
     "wormomatic_logo.png",
     caption="Earthworm Area/Mass Estimator",
-    use_column_width=True,
+    width=200,
 )
 
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
