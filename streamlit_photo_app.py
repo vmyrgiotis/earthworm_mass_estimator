@@ -283,10 +283,10 @@ def rectify_and_measure_from_array(image_bgr, dpi=300, dark_threshold=200, min_o
 st.set_page_config(page_title="Earthworm area/mass Estimator", layout="wide")
 st.title("Earthworm Area/Mass Estimator")
 st.write(
-    "Take a picture of earthworms on an A4 sheet. The app detects the paper, "
-    "shows the A4 outline and object mask, and estimates covered area in cm². "
+    "Take a picture of earthworms on an A4 sheet. "
     "Ensure the entire A4 sheet is visible in the image for accurate measurements. "
-    "Try to centre the photo on the A4 sheet and use good lighting for best results. "
+    "Try to centre the photo on the A4 sheet. Use good lighting for best results. "
+    "The app detects the paper, shows the A4 outline and object mask, and estimates covered area in cm². "    
     "Adjust detection parameters in the sidebar if needed."
 )
 
