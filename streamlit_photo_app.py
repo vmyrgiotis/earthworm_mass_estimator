@@ -287,12 +287,16 @@ st.write(
     "shows the A4 outline and object mask, and estimates covered area in cm²."
 )
 
+
 with st.sidebar:
     st.header("Detection parameters")
     dpi = st.slider("DPI for rectification", 150, 600, 300, step=50)
     dark_threshold = st.slider("Dark threshold", 50, 250, 200, step=5)
     min_object_pixels = st.slider("Minimum object size (pixels)", 10, 2000, 100, step=10)
     method = st.selectbox("Thresholding method", ["adaptive", "global", "otsu"])
+
+    st.markdown("---")
+    st.image("ukceh.png", caption="UK Centre for Ecology & Hydrology", use_column_width=True)
 
 st.subheader("Capture or upload image")
 tab1, tab2 = st.tabs(["Use camera", "Upload image"])
