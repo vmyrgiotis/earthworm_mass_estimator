@@ -288,7 +288,7 @@ st.write(
     " Ensure the entire A4 sheet is visible in the image for accurate measurements. "
     " Try to centre the photo close to the centre of the A4 sheet." 
     " Use good lighting for best results."
-    " Turn the camera flash on to void strong shadows and reflections on the paper - if needed. "
+    " Turn the camera flash on to void strong shadows and reflections on the paper - if needed. \n""
     " The app detects the A4 outline and object mask, and estimates area cover by earthworms in cm². "    
     " Adjust detection parameters in the sidebar if needed."
     " The Minimum object size (pixels) parameter can be used to exclude small debris or other noise."
