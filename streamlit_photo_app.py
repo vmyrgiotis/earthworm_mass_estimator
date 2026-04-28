@@ -281,7 +281,13 @@ def rectify_and_measure_from_array(image_bgr, dpi=300, dark_threshold=200, min_o
 
 
 st.set_page_config(page_title="Earthworm area/mass Estimator", layout="wide")
-st.title("WORM-O-MATIC")
+
+st.image(
+    "wormomatic_logo.png",
+    caption="Earthworm Area/Mass Estimator",
+    use_column_width=True,
+)
+
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
 st.write(
     " Take a picture of earthworms on an A4 sheet. "
