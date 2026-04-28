@@ -285,8 +285,9 @@ st.title("Earthworm Area/Mass Estimator")
 st.write(
     "Take a picture of earthworms on an A4 sheet. "
     "Ensure the entire A4 sheet is visible in the image for accurate measurements. "
-    "Try to centre the photo on the A4 sheet. Use good lighting for best results. "
-    "The app detects the paper, shows the A4 outline and object mask, and estimates covered area in cm². "    
+    "Try to centre the photo on centre the A4 sheet. Use good lighting for best results."
+    "Use flash if needed and void strong shadows and reflections on the paper. "
+    "The app detects the A4 outline and object mask, and estimates area cover by earthworms in cm². "    
     "Adjust detection parameters in the sidebar if needed."
 )
 
