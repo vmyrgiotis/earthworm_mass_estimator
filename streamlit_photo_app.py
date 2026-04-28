@@ -299,7 +299,7 @@ with st.sidebar:
     st.header("Detection parameters")
     dpi = st.slider("DPI for rectification", 150, 600, 300, step=50)
     dark_threshold = st.slider("Dark threshold", 50, 250, 200, step=5)
-    min_object_pixels = st.slider("Minimum object size (pixels)", 10, 2000, 100, step=10)
+    min_object_pixels = st.slider("Minimum object size (pixels)", 10, 2000, 500, step=10)
     method = st.selectbox("Thresholding method", ["adaptive", "global", "otsu"])
 
     st.markdown("---")
