@@ -291,7 +291,7 @@ st.title("Worm-o-matic")
 
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
 st.write(
-    " Take a picture of earthworms on an A4 sheet. "
+    " Take a picture of earthworms on a clean A4 sheet. "
     " Ensure the entire A4 sheet is visible in the image for accurate measurements. "
     " Try to centre the photo close to the centre of the A4 sheet." 
     " Use good lighting for best results."
