@@ -291,12 +291,12 @@ st.title("Worm-o-matic")
 
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
 st.write(
-    " Take a picture of earthworms on a clean A4 sheet. "
+    " Put your earthworms on a clean A4 sheet on a flat dark coloured surface e.g. a desk"
+    " Position your camera vertically above the A4. " 
     " Ensure the entire A4 sheet is visible in the image for accurate measurements. "
     " Try to centre the photo close to the centre of the A4 sheet." 
-    " Use good lighting and turn the camera flash on to avoid strong shadows and reflections on the paper - if needed.  \n\n "
-    " The app detects the A4 outline and all earthworms on the sheet. " 
-    " It estimates the area (cm²) covered by earthworms. "    
+    " Use good lighting and, if needed, turn on the camera flash to avoid strong shadows and reflections on the paper.  \n\n "
+    " The app detects the A4 outline and every earthworm on the sheet, and estimates the area (cm²) covered by earthworms. "    
     " Adjust the detection parameters in the sidebar if needed. "
     " The Minimum object size (pixels) parameter can be adjusted to exclude small debris or other noise. "
 )
