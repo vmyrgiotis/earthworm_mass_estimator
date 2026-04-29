@@ -7,10 +7,10 @@ A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deploy
 - Simple, interactive Streamlit interface
 
 ## Usage
-1. Clone the repository
+1. Clone the repository: 'git clone https://github.com/vmyrgiotis/earthworm_mass_estimator.git'
 2. Install dependencies: `pip install -r requirements.txt`
-3. Explore the example jupyter notebook and adjust for batch processing images.
-5. Run the app: `streamlit run streamlit_photo_app.py`
+3. Run the app locally: `streamlit run streamlit_photo_app.py`
+4. Load the example jupyter notebook for interactive exploration of the code and batch processing images.
 
 ## Deployment
 This app is ready for deployment on [Streamlit Cloud](https://streamlit.io/cloud).
