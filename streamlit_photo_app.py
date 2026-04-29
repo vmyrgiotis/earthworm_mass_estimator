@@ -291,8 +291,8 @@ st.title("Worm-o-matic")
 
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
 st.write(
-    " Put your earthworms on a clean A4 sheet on a flat dark coloured surface e.g. a desk"
-    " Position your camera vertically above the A4. " 
+    " Place your earthworms on a clean A4 sheet and put the A4 on a flat and dark-coloured surface. "
+    " Position your camera vertically above the A4 sheet. " 
     " Ensure the entire A4 sheet is visible in the image for accurate measurements. "
     " Try to centre the photo close to the centre of the A4 sheet." 
     " Use good lighting and, if needed, turn on the camera flash to avoid strong shadows and reflections on the paper.  \n\n "
