@@ -294,11 +294,11 @@ st.write(
     " Take a picture of earthworms on a clean A4 sheet. "
     " Ensure the entire A4 sheet is visible in the image for accurate measurements. "
     " Try to centre the photo close to the centre of the A4 sheet." 
-    " Use good lighting for best results."
-    " Turn the camera flash on to avoid strong shadows and reflections on the paper - if needed.  \n\n "
-    " The app detects the A4 outline, masks all earthworms on the A4 and estimates area covered by earthworms in cm². "    
-    " Adjust detection parameters in the sidebar if needed. "
-    " The Minimum object size (pixels) parameter can be used to exclude small debris or other noise. "
+    " Use good lighting and turn the camera flash on to avoid strong shadows and reflections on the paper - if needed.  \n\n "
+    " The app detects the A4 outline and all earthworms on the sheet. " 
+    " It estimates the area (cm²) covered by earthworms. "    
+    " Adjust the detection parameters in the sidebar if needed. "
+    " The Minimum object size (pixels) parameter can be adjusted to exclude small debris or other noise. "
 )
 
 
