@@ -1,0 +1,19 @@
+# See https://github.com/astral-sh/uv for full documentation
+[project]
+name = "earthworm_mass_estimator"
+version = "0.1.0"
+description = "Estimate earthworm mass from images."
+requires-python = ">=3.8"
+
+dependencies = [
+	"streamlit",
+	"numpy",
+	"pandas",
+	"scikit-learn",
+	"matplotlib"
+]
+
+[tool.uv]
+
+
+
