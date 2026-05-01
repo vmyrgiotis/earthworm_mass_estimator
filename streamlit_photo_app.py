@@ -1,17 +1,3 @@
-import sys
-import streamlit as st
-
-st.write(sys.version)
-st.write(sys.executable)
-
-try:
-    import cv2
-    st.write(cv2.__version__)
-except Exception as e:
-    st.error(repr(e))
-    st.stop()
-    
-    import cv2
 import numpy as np
 import streamlit as st
 from PIL import Image
