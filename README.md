@@ -1,6 +1,6 @@
 # Earthworm Mass Estimator
 
-A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deployable on Streamlit Cloud. Available here : https://vmyrgiotis-earthworm-mass-estimator-streamlit-photo-app-gmcyje.streamlit.app
+A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deployable on Streamlit Cloud. Available [here][https://vmyrgiotis-earthworm-mass-estimator-streamlit-photo-app-gmcyje.streamlit.app]
 
 ## Features
 - Upload a photo and estimate earthworm mass
