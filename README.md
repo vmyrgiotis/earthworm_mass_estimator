@@ -37,6 +37,38 @@ A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deploy
 	```
 6. **(Optional) Load the example Jupyter notebook** for interactive exploration and batch image processing.
 
+## Running the notebook
+
+The repository also includes an example Jupyter notebook for interactive exploration and batch image processing.
+
+### Option 1: Run Jupyter Lab inside the project environment
+After creating and syncing the environment, start Jupyter Lab with:
+
+```sh
+uv run jupyter lab
+```
+
+This launches Jupyter using the project's managed environment, so the notebook can access the same dependencies as the Streamlit app. Open the notebook file from the Jupyter interface and run the cells as needed.
+
+### Option 2: Run Jupyter Notebook instead of Lab
+If you prefer the classic notebook interface, run:
+
+```sh
+uv run jupyter notebook
+```
+
+### If Jupyter is not installed
+If `jupyter` is not already available in the environment, add it as a development dependency:
+
+```sh
+uv add --dev jupyter
+```
+
+Then start Jupyter again with:
+
+```sh
+uv run jupyter lab
+```
 ## Deployment
 This app is ready for deployment on [Streamlit Cloud](https://streamlit.io/cloud).
 
