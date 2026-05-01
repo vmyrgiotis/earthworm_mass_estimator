@@ -1,6 +1,6 @@
 # Earthworm Mass Estimator
 
-A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deployable on Streamlit Cloud. Available [here][https://vmyrgiotis-earthworm-mass-estimator-streamlit-photo-app-gmcyje.streamlit.app]
+A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deployable on Streamlit Cloud. Available [here](https://vmyrgiotis-earthworm-mass-estimator-streamlit-photo-app-gmcyje.streamlit.app)
 
 ## Features
 - Upload a photo and estimate earthworm mass
@@ -8,11 +8,11 @@ A Streamlit app to estimate earthworm area (and, soon, mass) from photos. Deploy
 
 ## Methodology 
 
-The algorithm is implemented in Python and provided as an application with a browser-based interface built on Streamlit Community Cloud. It currently performs a semi‑automated, image‑based estimation of earthworm abundance and occupied area on an A4 sheet, with earthworm size‑class grouping and mass estimation to be added in a subsequent version. The user uploads photographs of earthworms placed on an A4 sheet and interacts only with the controls exposed in the web interface, while all subsequent image‑processing steps are executed automatically by the underlying code. An example notebook included in the repository allows users to run the algorithm locally and batch‑process multiple images.
+The algorithm is implemented in Python and provided as an application with a browser-based interface built on Streamlit Community Cloud. It currently performs a semi‑automated, image‑based estimate of earthworm body area (and, in future versions, will provide fresh mass estimation), using a photo of worms placed on a printed A4 reference sheet.
 
-Methodologically, the tool applies a sequence of basic computer‑vision operations to detect the outline of the A4 sheet and define this as the spatial reference frame for subsequent analysis. Within this automatically detected A4 region, the image is processed to segment earthworm pixels from the background and compute geometric descriptors such as total area covered by earthworms, from which effective size measures (e.g. characteristic length or footprint) can be derived. All geometric quantities are first obtained in pixel units and then transformed into physical dimensions using fixed calibration factors implied by the known dimensions of A4 paper, so that the scaling from image space to real‑world units does not depend on user tuning.
+Methodologically, the tool applies a sequence of basic computer‑vision operations to detect the outline of the A4 sheet and define this as the spatial reference frame for subsequent analysis. Within this frame, the app segments the earthworm(s) from the background based on color and morphological operations.
 
-In the current implementation, these morphometric metrics are summarised as total earthworm area (and related size descriptors), providing a basis for grouping individuals into small, medium, and large classes and for estimating total earthworm mass in future versions via empirically calibrated parametric relationships. Within this framework, the user‑adjustable browser inputs control only which images are processed and any simple display options, while the Python code handles A4 detection, segmentation, feature extraction, and (once implemented) application of the size‑class grouping and mass‑calculation routines. The app returns the derived area‑based metrics together with an overlay of the detected A4 sheet and segmented earthworm regions on the original image, enabling users to visually verify that the earthworms have been correctly isolated and that the assumptions underpinning the geometric analysis are reasonable.
+In the current implementation, these morphometric metrics are summarised as total earthworm area (and related size descriptors), providing a basis for grouping individuals into small, medium, and large categories.
 
 ## Local launch & use of the app (with uv)
 1. **Clone the repository:**
@@ -69,3 +69,4 @@ This app is ready for deployment on [Streamlit Cloud](https://streamlit.io/cloud
 
 ## License
 See [LICENSE](LICENSE) for details.
+
