@@ -1,3 +1,9 @@
+import sys
+import streamlit as st
+
+st.write(sys.version)
+st.write(sys.executable)
+
 import cv2
 import numpy as np
 import streamlit as st
