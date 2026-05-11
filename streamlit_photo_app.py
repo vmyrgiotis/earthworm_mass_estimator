@@ -314,7 +314,7 @@ with st.sidebar:
     st.image(
         "ukceh.png",
         caption="[UK Centre for Ecology & Hydrology](https://www.ceh.ac.uk)",
-        use_column_width=True,
+        width=None,
     )
 
 st.subheader("Capture or upload image")
@@ -354,20 +354,20 @@ if image_bgr is not None:
                 st.subheader("Original with detected A4")
                 st.image(
                     cv2.cvtColor(result["original_with_a4"], cv2.COLOR_BGR2RGB),
-                    width="stretch",
+                    width=None,
                 )
             with col2:
                 st.subheader("Rectified A4 with objects")
                 st.image(
                     cv2.cvtColor(result["overlay"], cv2.COLOR_BGR2RGB),
-                    width="stretch",
+                    width=None,
                 )
             with col3:
                 st.subheader("Object mask")
                 st.image(
                     result["clean_mask"],
                     caption="Binary mask of detected objects",
-                    width="stretch",
+                    width=None,
                 )
 
             st.markdown("### Measurements")
@@ -382,9 +382,9 @@ if image_bgr is not None:
             )
 
             with st.expander("Show intermediate images"):
-                st.image(result["gray_image"], caption="Grayscale (rectified)", width="stretch")
-                st.image(result["normalized_gray"], caption="Normalized grayscale", width="stretch")
-                st.image(result["binary_mask"], caption="Raw binary mask", width="stretch")
+                st.image(result["gray_image"], caption="Grayscale (rectified)", width=None)
+                st.image(result["normalized_gray"], caption="Normalized grayscale", width=None)
+                st.image(result["binary_mask"], caption="Raw binary mask", width=None)
 
         except Exception as e:
             st.error(f"Error during processing: {e}")
