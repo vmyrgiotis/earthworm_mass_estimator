@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> eabb4726805d2a8de29b2a96995a7de0f5c5c904
 import cv2
 import numpy as np
 import streamlit as st
