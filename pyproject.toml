@@ -10,6 +10,6 @@ dependencies = [
 	"numpy",
 	"pandas",
 	"scikit-learn",
-	"matplotlib"
+	"matplotlib",
 	"opencv-python"
 ]
