@@ -5,3 +5,4 @@ Pillow
 pandas
 scikit-learn
 matplotlib
+py-opencv
