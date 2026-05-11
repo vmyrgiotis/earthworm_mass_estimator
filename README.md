@@ -69,11 +69,11 @@ This app is ready for deployment on [Streamlit Cloud](https://streamlit.io/cloud
 ## Troubleshooting
 If you see an error like `ImportError: libGL.so.1: cannot open shared object file`, your environment is missing system libraries required by OpenCV or is using a non-headless OpenCV build.
 
-- Keep `opencv-python-headless` in Python dependencies.
+- Keep `opencv-python-headless` in dependency files (`requirements.txt` and `pyproject.toml`).
 - Remove `opencv-python` if both OpenCV wheels are present.
-- For platforms that support apt packages (including Streamlit Cloud), this repository includes `packages.txt` with:
-	- `libgl1`
-	- `libglib2.0-0`
+- If you use uv locally, regenerate the lockfile after dependency changes:
+	- `uv lock`
+	- `uv sync`
 
 ## License
 See [LICENSE](LICENSE) for details.

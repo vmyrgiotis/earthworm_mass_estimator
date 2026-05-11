@@ -304,9 +304,9 @@ if cv2 is None:
     )
     st.markdown(
         "### How to fix\n"
-        "- Prefer `opencv-python-headless` in your Python dependencies.\n"
+        "- Use `opencv-python-headless` in your dependency files (`requirements.txt` and `pyproject.toml`).\n"
         "- Remove `opencv-python` if both are installed.\n"
-        "- If your platform supports OS packages, install `libgl1` and `libglib2.0-0`."
+        "- If using uv, regenerate the lockfile (`uv lock`) and sync (`uv sync`)."
     )
     st.caption(f"Import error details: {_cv2_import_error}")
     st.stop()
