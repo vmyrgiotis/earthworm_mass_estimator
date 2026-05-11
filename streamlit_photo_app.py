@@ -1,6 +1,12 @@
-import cv2
-import numpy as np
 import streamlit as st
+try:
+    import cv2
+    _cv2_import_error = None
+except ImportError as exc:
+    cv2 = None
+    _cv2_import_error = exc
+
+import numpy as np
 from PIL import Image
 
 A4_W_MM = 210.0
@@ -290,6 +296,21 @@ st.title("Worm-o-matic")
 # )
 
 st.markdown("<h3 style='margin-top:0;'>Earthworm Area/Mass Estimator</h3>", unsafe_allow_html=True)
+
+if cv2 is None:
+    st.error(
+        "OpenCV failed to load. This is usually caused by missing system libraries (for example: libGL.so.1) "
+        "or by installing the GUI OpenCV wheel in a headless environment."
+    )
+    st.markdown(
+        "### How to fix\n"
+        "- Prefer `opencv-python-headless` in your Python dependencies.\n"
+        "- Remove `opencv-python` if both are installed.\n"
+        "- If your platform supports OS packages, install `libgl1` and `libglib2.0-0`."
+    )
+    st.caption(f"Import error details: {_cv2_import_error}")
+    st.stop()
+
 st.write(
     " Place your earthworms on a clean A4 sheet and put the A4 on a flat and dark-coloured surface. "
     " Position your camera vertically above the A4 sheet. " 
