@@ -12,6 +12,7 @@ dependencies = [
 	"scikit-learn",
 	"matplotlib"
 ]
+	"opencv-python"
 
 [tool.uv]
 
