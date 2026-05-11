@@ -11,10 +11,7 @@ dependencies = [
 	"pandas",
 	"scikit-learn",
 	"matplotlib"
-]
 	"opencv-python"
+]
 
 [tool.uv]
-
-
-
